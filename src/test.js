@@ -8,6 +8,7 @@ import Button from '@material-ui/core/Button'
 
 export default function FullWidthGrid() {
   const theme = useTheme();
+  console.log({theme})
   return (
     <>
     <div className={theme.root}>
@@ -35,8 +36,8 @@ export default function FullWidthGrid() {
         </Grid>
       </Grid>
     </div>
-    <Button className={theme.button}>Hook</Button>
-    <h3 className={theme.h3}>testing h3</h3>
+    <Button className={theme.props.button}>Hook</Button>
+    <h3 className={theme.props.h3}>testing h3</h3>
     </>
   );
 }
