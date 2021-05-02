@@ -8,7 +8,7 @@ import Button from '@material-ui/core/Button'
 
 export default function FullWidthGrid() {
   const theme = useTheme();
-  console.log({theme})
+  // console.log({theme})
   return (
     <>
     <div className={theme.root}>

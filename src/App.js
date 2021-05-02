@@ -1,16 +1,9 @@
 import FullWidthGrid from "./test";
-import CssBaseline from "@material-ui/core/CssBaseline";
+// import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   props: {
-    h3: {
-      fontSize: "1.2rem",
-      "@media (min-width:600px)": {
-        fontSize: "1.5rem",
-      },
-      color: "blue",
-    },
     root: {
       flexGrow: 1,
     },
@@ -35,9 +28,9 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={classes}>
-        <CssBaseline>
+        {/* <CssBaseline> */}
           <FullWidthGrid />
-        </CssBaseline>
+        {/* </CssBaseline> */}
       </ThemeProvider>
     </div>
   );
