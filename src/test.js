@@ -4,8 +4,6 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button'
 
-
-
 export default function FullWidthGrid() {
   const theme = useTheme();
   // console.log({theme})

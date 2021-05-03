@@ -1,14 +1,15 @@
+import React from 'react';
 import FullWidthGrid from "./test";
-// import CssBaseline from "@material-ui/core/CssBaseline";
+import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   props: {
     root: {
       flexGrow: 1,
     },
     paper: {
-      padding: "1em",
+      padding: theme.spacing(2),
       textAlign: "center",
     },
     button: {
@@ -21,19 +22,19 @@ const useStyles = makeStyles({
       padding: "0 30px",
     },
   },
-});
+}))
 
-function App() {
+export default function App() {
   const classes = useStyles()
   return (
     <div className="App">
       <ThemeProvider theme={classes}>
-        {/* <CssBaseline> */}
+        <CssBaseline>
           <FullWidthGrid />
-        {/* </CssBaseline> */}
+        </CssBaseline>
       </ThemeProvider>
     </div>
   );
 }
 
-export default App;
+
